@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cb8e7ae64b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fredoka+One&family=Space+Mono&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Les composteurs du Clos Saint-Simon</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="div-header-border">
+        <img
+          src="./photos/logo-site.png"
+          class="logo-header"
+          alt="dessin représentant deux personnes à côté d'un bac à compost entourés de plantes"
+        />
+        <h1 class="titre-header">Les composteurs du Clos Saint-Simon</h1>
+      </div>
+      <div id="bouton" class="apparition1">
+        <button>☰</button>
+      </div>
+      <nav id="menu" class="nav affichage">
+        <ul id="display">
+          <li class="ongletMenu border-top">
+            <a href="./index.html" class="lienMenu">Accueil</a>
+          </li>
+          <li class="nav__déroulant ongletMenu derouleInfos"><a href="#" class="contain-fleche">Comment composter<img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheInfos"/></a>
+            <ul class="sous sousInfos" id="sous">
+              <li class="affichage-mobile-padding"><a href="ok.html">Ce que je peux composter</a></li>
+              <li class="affichage-mobile-padding"><a href="non.html">Ce que je ne peux pas composter</a></li>
+              <li class="affichage-mobile-padding"><a href="gestes.html">Les bons gestes à adopter</a></li>
+            </ul>
+          </li>
+          <li class="ongletMenu">
+            <a href="./betes.html" class="lienMenu">Les bébêtes du compost</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./utilisation.html" class="lienMenu">Utiliser le compost</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./recherche.html" class="lienMenu">Recherche</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./actu.html" class="lienMenu">Actualités</a>
+          </li>
+          <li class="nav__déroulant ongletMenu derouleQuizz"><a href="#" class="contain-fleche">Quizz<img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheQuizz"/></a>
+            <ul class="sous sousQuizz" id="sous">
+              <li class="affichage-mobile-padding"><a href="quizz.html">Comment et quoi composter</a></li>
+              <li class="affichage-mobile-padding"><a href="quizzcompost.html">Reconnaitre et utiliser le compost mûr</a></li>
+              <li class="affichage-mobile-padding"><a href="quizzbetes.html">Les petites bêtes du compost</a></li>
+              <li class="affichage-mobile-padding"><a href="quelcomposteur.html">Quel composteur es-tu ?</a></li>
+            </ul>
+          </li>
+          <li class="ongletMenu border-bottom">
+            <a href="./contact.html" class="lienMenu">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="quizz">
+      <h3>Quizz: Reconnaitre et utiliser le compost mûr</h3>
+      <div class="container-imgpagequizz">
+        <img src="./photos/quizz/plante.png" class="imgpagequizz"/>
+      </div>
+      <form name="quizzBetes" style="padding: 10px">
+        <div>
+          <h4>
+            1. En quoi consiste le test du poing ?
+          </h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1Oui"
+                      type="radio"
+                      name="answer1"
+                      aria-label="Enfoncer son poing dans le compost pour vérifier la température"
+                      value="Enfoncer son poing dans le compost pour vérifier la température"
+                    />
+                  </div>
+                  <div>
+                    <label for="r1Oui">Enfoncer son poing dans le compost pour vérifier la température</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1Non"
+                      type="radio"
+                      class="correct"
+                      name="answer1"
+                      aria-label="Prendre une poignée de compost afin de vérifier sa teneur en eau"
+                      value="Prendre une poignée de compost afin de vérifier sa teneur en eau"
+                    />
+                  </div>
+                  <div>
+                    <label for="r1Non" class="repVert1">Prendre une poignée de compost afin de vérifier sa teneur en eau</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer1"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r1Coup"
+                      type="radio"
+                      name="answer1"
+                      aria-label="Mettre un coup de poing dans le bac pour chasser les insectes"
+                      value="Mettre un coup de poing dans le bac pour chasser les insectes"
+                    />
+                  </div>
+                  <div>
+                    <label for="r1Coup">Mettre un coup de poing dans le bac pour chasser les insectes</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bonneRep1"><p>Réponse : Prendre une poignée de compost et la serrer dans son poing, si elle forme une boule le compost est parfait, si cela dégouline le compost est trop humide (il faut rajouter du brun), si ça s'effrite le compost est trop sec (il faut arroser).</p></div>
+        </div>
+        <div>
+          <h4>
+            2. Comment savoir si mon compost est mûr ?
+          </h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2Oui"
+                      type="radio"
+                      name="answer2"
+                      aria-label="Il change de couleur"
+                      value="Il change de couleur"
+                    />
+                  </div>
+                  <div>
+                    <label for="r2Oui">Il change de couleur</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2Non"
+                      class="correct"
+                      type="radio"
+                      name="answer2"
+                      aria-label="Il ressemble à du terreau"
+                      value="Il ressemble à du terreau"
+                    />
+                  </div>
+                  <div>
+                    <label for="r2Non" class="repVert2">Il ressemble à du terreau</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer2"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r2Ferme"
+                      type="radio"
+                      name="answer2"
+                      aria-label="Il est sec"
+                      value="Il est sec"
+                    />
+                  </div>
+                  <div>
+                    <label for="r2Ferme">Il est sec</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bonneRep2"><p>Réponse : Le compost mûr ressemble à du terreau.</p></div>
+        </div>
+        <div>
+          <h4>
+            3. Quelle période est la plus indiquée pour donner de l'engrais à ses plantes ?
+          </h4>
+          <div>
+            <select name="dechets" id="answer3" style="margin-left: 45px; border-radius: 30px; margin-bottom: 16px">
+              <option value="">--Veuillez choisir une option--</option>
+              <option value="pq">Automne</option>
+              <option value="mouchoir">Hiver</option>
+              <option value="sac" class="repVert3">Printemps</option>
+              <option value="oeuf">Eté</option>
+            </select>
+          </div>
+          <div class="bonneRep3"><p>Réponse : Printemps. A cette période les plantes reprennent leur croissance, elles bourgeonnent et ont besoin d'énergie. Pour les plantes en pot, c'est aussi la bonne période pour effectuer un rempotage.</p></div>
+        </div>
+        <div>
+          <h4>4. On ne peut pas utiliser de compost pour les plantes en pot.</h4>
+          <div>
+            <ul>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-1"
+                      type="radio"
+                      name="answer4"
+                      aria-label="Vrai"
+                      value="Vrai"
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-1">Vrai</label>
+                  </div>
+                </div>
+              </li>
+              <li style="list-style-type: none">
+                <div
+                  class="answer4"
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: baseline;
+                    align-items: center;
+                  "
+                >
+                  <div style="padding-right: 5px">
+                    <input
+                      id="r4-2"
+                      class="correct"
+                      type="radio"
+                      name="answer4"
+                      aria-label="Faux"
+                      value="Faux"
+                    />
+                  </div>
+                  <div>
+                    <label for="r4-2" class="repVert4">Faux</label>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="bonneRep4"><p>Réponse : Faux. Les plantes en pot ont aussi besoin d'engrais, voir même plus que les plantes en sol puisqu'elles sont dans un espace réduit dont la 'vie' est limitée. Attention cependant à ne pas trop en mettre car une trop grande quantité peut avoir l'effet inverse et brûler les racines ou étouffer la plante. Il est recommandé de mélanger un peu de compost dans l'eau d'arrosage 1 fois par mois (1 cuillère à soupe dans 1 litre d'eau).</p></div>
+        </div>
+        <div>
+            <h4>5. Le compost, à quoi ça sert ?</h4>
+            <p class="pquizz">(Attention, plusieurs réponses sont possibles)</p>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-1"
+                              type="checkbox"
+                              name="answer5"
+                              aria-label="A rien, c'est juste un truc de bobo"
+                              value="A rien, c'est juste un truc de bobo"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-1">A rien, c'est juste un truc de bobo</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-2"
+                              type="checkbox"
+                              class="correctRep51"
+                              name="answer5"
+                              aria-label="A recycler ses déchets verts"
+                              value="A recycler ses déchets verts"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-2" class="repVert5">A recycler ses déchets verts</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-3"
+                              class="correctRep52"
+                              type="checkbox"
+                              name="answer5"
+                              aria-label="A nourrir les sols"
+                              value="A nourrir les sols"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-3" class="repVert52">A nourrir les sols</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-4"
+                              type="checkbox"
+                              name="answer5"
+                              aria-label="A donner à manger aux insectes en hiver"
+                              value="A donner à manger aux insectes en hiver"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-4">A donner à manger aux insectes en hiver</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer5"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r5-4"
+                              class="correctRep53"
+                              type="checkbox"
+                              name="answer5"
+                              aria-label="A faire de l'engrais pour les plantes"
+                              value="A faire de l'engrais pour les plantes"
+                            />
+                          </div>
+                          <div>
+                            <label for="r5-4" class="repVert53">A faire de l'engrais pour les plantes</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep5"><p>Réponse : Recycler ses déchets verts, nourrir les sols et fabriquer de l'engrais pour les plantes. En plus d'être une solution 'zéro-déchet' puisqu'il permet de donner une seconde vie à nos déchets alimentaires, le compost est également un formidable moyen de nourrir le sol et les plantes, grâce à l'action combinée des insectes, micro-organismes et molécules qui y sont présents.</p></div>
+        </div>
+        <div>
+            <h4>6. Quand on met du compost au pied d'un arbre, il faut bien recouvrir le tronc et les racines.</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6Non"
+                              class="correct"
+                              type="radio"
+                              name="answer6"
+                              aria-label="Faux"
+                              value="Faux"
+                            />
+                          </div>
+                          <div>
+                            <label for="r6Non" class="repVert6">Faux</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer6"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r6Oui"
+                              type="radio"
+                              name="answer6"
+                              aria-label="Vrai"
+                              value="Vrai"
+                            />
+                          </div>
+                          <div>
+                            <label for="r6Oui">Vrai</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep6"><p>Réponse : Faux. Il faut au contraire veiller à laisser un espace entre le tronc et le compost pour éviter qu'il ne brûle.</p></div>
+        </div>
+        <div>
+            <h4>7. Au jardin, s'il n'y a pas de plantes, ça ne sert à rien de mettre du compost.</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-1"
+                              type="radio"
+                              name="answer7"
+                              aria-label="Vrai"
+                              value="Vrai"
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-1">Vrai</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer7"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r7-2"
+                              class="correct"
+                              type="radio"
+                              name="answer7"
+                              aria-label="Faux"
+                              value="Faux"
+                            />
+                          </div>
+                          <div>
+                            <label for="r7-2" class="repVert7">Faux</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep7"><p>Réponse : Faux. Le compost permet de nourrir le sol en profondeur, en préparation d'un semis par exemple.</p></div>
+        </div>
+        <div>
+            <h4>8. En trop grande quantité, le compost peut brûler les plantes.</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-1"
+                              class="correct"
+                              type="radio"
+                              name="answer8"
+                              aria-label="Vrai"
+                              value="Vrai"
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-1" class="repVert8">Vrai</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer8"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r8-2"
+                              type="radio"
+                              name="answer8"
+                              aria-label="Faux"
+                              value="Faux"
+                            />
+                          </div>
+                          <div>
+                            <label for="r8-2">Faux</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep8"><p>Réponse : Vrai.</p></div>
+        </div>
+        <div>
+            <h4>9. En 1 mois mon volume de compost en maturation a baissé de moitié, c'est normal ?</h4>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-1"
+                              class="correct"
+                              type="radio"
+                              name="answer9"
+                              aria-label="Oui, cela fait partie du processus de maturation"
+                              value="Oui, cela fait partie du processus de maturation"
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-1" class="repVert9">Oui, cela fait partie du processus de maturation</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer9"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r9-2"
+                              type="radio"
+                              name="answer9"
+                              aria-label="Non, il y a des voleurs de compost"
+                              value="Non, il y a des voleurs de compost"
+                            />
+                          </div>
+                          <div>
+                            <label for="r9-2">Non, il y a des voleurs de compost</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep9"><p>Réponse : Oui.</p></div>
+        </div>
+        <div>
+            <h4>10. Pailler, ça veut dire quoi ?</h4>
+            <p class="pquizz">(Attention, plusieurs réponses sont possibles)</p>
+            <div>
+                <ul>
+                    <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-1"
+                              type="checkbox"
+                              name="answer10"
+                              aria-label="C'est comme bailler mais avec un P"
+                              value="C'est comme bailler mais avec un P"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-1">C'est comme bailler mais avec un P</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-2"
+                              type="checkbox"
+                              name="answer10"
+                              aria-label="C'est boire avec une paille"
+                              value="C'est boire avec une paille"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-2">C'est boire avec une paille</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-3"
+                              class="correct101"
+                              type="checkbox"
+                              name="answer10"
+                              aria-label="C'est mettre de la paille par terre"
+                              value="C'est mettre de la paille par terre"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-3" class="repVert10">C'est mettre de la paille par terre</label>
+                          </div>
+                        </div>
+                      </li>
+                      <li style="list-style-type: none">
+                        <div
+                          class="answer10"
+                          style="
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: baseline;
+                            align-items: center;
+                          "
+                        >
+                          <div style="padding-right: 5px">
+                            <input
+                              id="r10-6"
+                              class="correct102"
+                              type="checkbox"
+                              name="answer10"
+                              aria-label="Recouvrir le sol pour le protéger"
+                              value="Recouvrir le sol pour le protéger"
+                            />
+                          </div>
+                          <div>
+                            <label for="r10-6" class="repVert101">C'est recouvrir le sol pour le protéger</label>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </div>
+            <div class="bonneRep10"><p>Réponse : Mettre de la paille par terre et recouvrir le sol. A l'origine 'pailler' signifie recouvrir le sol avec de la paille, mais l'expression est aujourd'hui étendue à l'action de recouvrir le sol dans le but de le protéger, notamment du froid. On peut tout à fait pailler avec du compost, des feuilles mortes, une bâche en plastique, ...</p></div>
+        </div>
+      </form>
+      <div class="containButton"><button id="boutonForm">Valider</button></div>
+      <div id="total"><p class="afficheTotal"></p></div>
+      <div class="divLienPageQuizz">
+        <img src="./photos/quizz/doigt.png" class="doigtquizz"/>
+        <a href="touslesquizz.html" class="lienPageQuizz">Plus de quizz</a>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-div">
+        <div class="footer-div-titre"><h4>Les composteurs du Clos Saint-Simon</h4></div>
+        <div class="footer-paragraph">
+          <a href="mailto:compostage.clos.saint.simon@gmail.com"><img src="./photos/mail.png" class="logo-fb" alt="enveloppe, logo email"/></a>
+          <a
+            href="https://www.facebook.com/lescomposteursduclossaintsimon/"
+            target="_blank"
+          >
+            <img src="./photos/fb-cercle.png" class="logo-fb" alt="logo facebook"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/quizzbetes.js"></script>
+  </body>
+</html>

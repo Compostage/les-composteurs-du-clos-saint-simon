@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cb8e7ae64b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fredoka+One&family=Space+Mono&family=Shrikhand&display=swap" rel="stylesheet">
+    <title>Les composteurs du Clos Saint-Simon</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="div-header-border">
+        <img src="./photos/logo-site.png" class="logo-header" alt="dessin représentant deux personnes à côté d'un bac à compost entourés de plantes" />
+        <h1 class="titre-header">Les composteurs du Clos Saint-Simon</h1>
+      </div>
+      <div id="bouton" class="apparition1">
+        <button>☰</button>
+    </div>
+    <nav id="menu" class="nav affichage">
+      <ul id="display">
+        <li class="ongletMenu border-top">
+          <a href="./index.html" class="lienMenu">Accueil</a>
+        </li>
+        <li class="nav__déroulant ongletMenu derouleInfos"><a href="#" class="contain-fleche">Comment composter<img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheInfos"/></a>
+          <ul class="sous sousInfos" id="sous">
+            <li class="affichage-mobile-padding"><a href="ok.html">Ce que je peux composter</a></li>
+            <li class="affichage-mobile-padding"><a href="non.html">Ce que je ne peux pas composter</a></li>
+            <li class="affichage-mobile-padding"><a href="gestes.html">Les bons gestes à adopter</a></li>
+          </ul>
+        </li>
+        <li class="ongletMenu">
+          <a href="./betes.html" class="lienMenu">Les bébêtes du compost</a>
+        </li>
+        <li class="ongletMenu">
+          <a href="./utilisation.html" class="lienMenu">Utiliser le compost</a>
+        </li>
+        <li class="ongletMenu">
+          <a href="./recherche.html" class="lienMenu">Recherche</a>
+        </li>
+        <li class="ongletMenu">
+          <a href="./actu.html" class="lienMenu">Actualités</a>
+        </li>
+        <li class="nav__déroulant ongletMenu derouleQuizz"><a href="#" class="contain-fleche">Quizz<img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheQuizz"/></a>
+          <ul class="sous sousQuizz" id="sous">
+            <li class="affichage-mobile-padding"><a href="quizz.html">Comment et quoi composter</a></li>
+            <li class="affichage-mobile-padding"><a href="quizzcompost.html">Reconnaitre et utiliser le compost mûr</a></li>
+            <li class="affichage-mobile-padding"><a href="quizzbetes.html">Les petites bêtes du compost</a></li>
+            <li class="affichage-mobile-padding"><a href="quelcomposteur.html">Quel composteur es-tu ?</a></li>
+          </ul>
+        </li>
+        <li class="ongletMenu border-bottom">
+          <a href="./contact.html" class="lienMenu">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    </header>
+    <section id="section-ok">
+        <div class="titre">
+            <h2 class="titre-ok">Ce que je peux composter</h2>
+        </div>
+        <div class="oui">
+            <div class="epluchures ok">
+                <div class="cercle">
+                <img src="./photos/compost-legumes.png" alt="épluchures" class="image-ok">
+                <h3>Les épluchures, les fruits/légumes pourris</h3>
+                </div>
+                <p>A découper en petits morceaux</p>
+            </div>
+            <div class="produit-laitier ok">
+                <div class="cercle">
+                <img src="./photos/compost-fromage.png" alt="produits laitiers" class="image-ok">
+                <h3>Tous les produits laitiers</h3>
+                </div>
+                <p>Yaourts et crèmes périmées, croutes de fromage</p>
+            </div>
+            <div class="oeuf ok">
+                <div class="cercle">
+                <img src="./photos/compost-oeuf.png" alt="coquilles d'oeuf" class="image-ok">
+                <h3>Les coquilles d'oeuf</h3>
+                </div>
+                <p><b>Ecrasées</b> (se décomposent plus facilement) ou <b>empilées</b> (servent de refuge aux insectes bons pour le compost)</p>
+            </div>
+            <div class="noyaux ok">
+                <div class="cercle">
+                <img src="./photos/compost-noix.png" alt="graines" class="image-ok">
+                <h3>Les noix, noyaux et graines</h3>
+                </div>
+                <p>Tous les noyaux et graines sont compostables. Certaines graines résistent cependant au processus comme les graines de tomates ou de courges, et pousseront donc dans le bac</p>
+            </div>
+            <div class="viande ok">
+                <div class="cercle">
+                <img src="./photos/compost-viande.png" alt="dessin de poisson" class="image-ok">
+                <h3>La viande, le poisson</h3>
+                </div>
+                <p>En <b>petits morceaux</b>, ainsi que les os et les arrêtes</p>
+            </div>
+            <div class="pain ok">
+                <div class="cercle">
+                <img src="./photos/compost-pain.png" alt="pain" class="image-ok">
+                <h3>Le pain</h3>
+                </div>
+                <p><b>Apport occasionnel, rare et en très petits morceaux</b>: le pain en décomposition tue les bonnes bactéries du compost !</p>
+            </div>
+            <div class="cafe ok">
+                <div class="cercle">
+                <img src="./photos/compost-cafe.png" alt="marc de café" class="image-ok">
+                <h3>Le marc de café</h3>
+                </div>
+                <p>En quantité raisonnable il joue le rôle d'activateur et constitue un bon apport en minéraux</p>
+            </div>
+            <div class="agrumes ok">
+              <div class="cercle">
+              <img src="./photos/agrumes.png" alt="dessins d'agrumes" class="image-ok">
+              <h3>Les agrumes</h3>
+              </div>
+              <p>On pense souvent que les agrumes (orange, pamplemousse, citron, clémentine) ne sont pas compostables. Pourtant les agrumes se décomposent très bien, pas d'inquiétude !</p>
+          </div>
+            <div class="carton ok">
+                <div class="cercle">
+                <img src="./photos/compost-carton.png" alt="dessin carton d'emballage" class="image-ok">
+                <h3>Le carton brut</h3>
+                </div>
+                <p>Penser à <b>découper avant de jeter</b>: boites d'oeufs, carton marron, sac kraft, rouleaux de PQ</p>
+            </div>
+        </div>
+    </section>
+    <section id="sectionTest">
+      <div class="divTest">
+        <p>Tu penses tout savoir sur l'art du compostage ?<br/>Teste tes acquis avec nos quizz !</p>
+      </div>
+      <div class="divTestBtn">
+        <button id="btnQuizz1" class="btnTest"><a href="quizz.html">Faire le test</a></button>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer-div">
+        <div class="footer-div-titre"><h4>Les composteurs du Clos Saint-Simon</h4></div>
+        <div class="footer-paragraph">
+          <a href="mailto:compostage.clos.saint.simon@gmail.com"><img src="./photos/mail.png" class="logo-fb" alt="enveloppe, logo email"/></a>
+          <a
+            href="https://www.facebook.com/lescomposteursduclossaintsimon/"
+            target="_blank"
+          >
+            <img src="./photos/fb-cercle.png" class="logo-fb" alt="logo facebook"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/nav.js"></script>
+</body>
+</html>
