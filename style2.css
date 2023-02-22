@@ -1889,9 +1889,7 @@ nav a:hover {
 }
 
 #search {
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  border-right: none;
+  border-radius: 30px;
   padding: 7px;
   color: green;
   font-weight: 600;

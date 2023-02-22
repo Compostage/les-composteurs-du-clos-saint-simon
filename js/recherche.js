@@ -195,8 +195,8 @@ function createSearchResult(item)
 // 	}
 // }
 
-const bouton = document.getElementById("button-search");
-bouton.addEventListener('click', Content);
+const searchBar = document.getElementById("search");
+searchBar.addEventListener('keyup', Content);
 
 //Affichage navigateur version mobile
 
