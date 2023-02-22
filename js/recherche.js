@@ -123,9 +123,8 @@ function Content()
     const itemSearch = inputSearch.value.toLocaleLowerCase();
     console.log(itemSearch);
 
-    for (let i = 0; i < Liste.length; i++)
+    for (item of Liste)
     {
-        const item = Liste[i];
         const titreCompare = item.titre.toLocaleLowerCase();
         const parCompare = item.paragraph.toLocaleLowerCase();
         const cacheCompare = item.nonAffiche.toLocaleLowerCase();
@@ -134,44 +133,51 @@ function Content()
             || parCompare.includes(itemSearch)
             || cacheCompare.includes(itemSearch))
         {
-            let div = document.createElement("div");
-            div.classList.add("item");
-            content.appendChild(div);
-
-            let cercle = document.createElement("div");
-            cercle.classList.add("itemContent");
-            div.appendChild(cercle);
-
-            let image = document.createElement("img");
-            image.src = item.image;
-            image.altTxt = item.altText;
-            image.classList.add("image-ok");
-            cercle.appendChild(image);
-
-            let titre = document.createElement("h3");
-            titre.innerHTML = item.titre;
-            cercle.appendChild(titre);
-
-            let paragraphe = document.createElement("p");
-            paragraphe.classList.add("pContent");
-            paragraphe.innerHTML = item.paragraph;
-            div.appendChild(paragraphe);
-
-            let indication = document.createElement("div");
-            indication.classList.add("indication");
-            content.appendChild(indication);
-
-            let msgIndic = document.createElement("p");
-            msgIndic.innerHTML = `Je ${item.compostable?"peux":"ne dois pas"} composter`;
-            indication.appendChild(msgIndic);
-
-            let imgIndic = document.createElement("img");
-            imgIndic.src = `./photos/${item.compostable?"coche":"croix"}.png`;
-            indication.appendChild(imgIndic);
+            content.appendChild(createSearchResult(item));
         }
     }
 }
 
+function createSearchResult(item)
+{
+    const resultDiv = document.createElement("div");
+
+    const imageDiv = document.createElement("div");
+    resultDiv.appendChild(imageDiv);
+    imageDiv.classList.add("item");
+
+    const cercle = document.createElement("div");
+    cercle.classList.add("itemContent");
+    imageDiv.appendChild(cercle);
+
+    const image = document.createElement("img");
+    image.src = item.image;
+    image.altTxt = item.altText;
+    image.classList.add("image-ok");
+    cercle.appendChild(image);
+
+    const titre = document.createElement("h3");
+    titre.innerHTML = item.titre;
+    cercle.appendChild(titre);
+
+    const paragraphe = document.createElement("p");
+    paragraphe.classList.add("pContent");
+    paragraphe.innerHTML = item.paragraph;
+    imageDiv.appendChild(paragraphe);
+
+    const indication = document.createElement("div");
+    indication.classList.add("indication");
+    resultDiv.appendChild(indication);
+
+    const msgIndic = document.createElement("p");
+    msgIndic.innerHTML = `Je ${item.compostable ? "peux" : "ne dois pas"} composter`;
+    indication.appendChild(msgIndic);
+
+    const imgIndic = document.createElement("img");
+    imgIndic.src = `./photos/${item.compostable ? "coche" : "croix"}.png`;
+    indication.appendChild(imgIndic);
+    return resultDiv;
+}
 // 		} else {
 //             let content = document.getElementById("filterResultContainer");
 
