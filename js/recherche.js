@@ -7,8 +7,6 @@ const Liste = [
         altText: "dessin silhouette chat",
         paragraph: "Déjections, litière minérale",
         compostable: false,
-        indication: "Je ne dois pas composter",
-        imgIndication: "./photos/croix.png",
         nonAffiche: ""
     },
     {
@@ -17,8 +15,6 @@ const Liste = [
         altText: "photo cendre charbon de bois",
         paragraph: "Les cendres peuvent être répandues directement au sol (pas en trop grande quantité tout de même). Les poussières d'aspirateur sont à jeter car on ne peut pas garantir leur composition",
         compostable: false,
-        indication: "Je ne dois pas composter",
-        imgIndication: "./photos/croix.png",
         nonAffiche: ""
     },
     {
@@ -27,8 +23,6 @@ const Liste = [
         altText: "dessin sac plastique",
         paragraph: "Sac plastique \"recyclable\", sachets de thé contenant du plastique, mégots de cigarette",
         compostable: false,
-        indication: "Je ne dois pas composter",
-        imgIndication: "./photos/croix.png",
         nonAffiche: ""
     },
     {
@@ -37,8 +31,6 @@ const Liste = [
         altText: "photo plante rampante",
         paragraph: "Liseron, chiendent, misère, entre autres. Ces plantes sont capables de résister à des températures élevées et d'envahir les alentours du composteur",
         compostable: false,
-        indication: "Je ne dois pas composter",
-        imgIndication: "./photos/croix.png",
         nonAffiche: ""
     },
     {
@@ -47,8 +39,6 @@ const Liste = [
         altText: "photo sapin",
         paragraph: "Les plantes de la famille des résineux (sapin) contiennent des inhibiteurs de croissance",
         compostable: false,
-        indication: "Je ne dois pas composter",
-        imgIndication: "./photos/croix.png",
         nonAffiche: ""
     },
     {
@@ -57,8 +47,6 @@ const Liste = [
         altText: "épluchures",
         paragraph: "A découper en petits morceaux",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: "peau, tomate, carotte, poireau, oignon, haricot, patate, pomme de terre, ail, concombre, courgette, poivron, avocat, blette, salade, chou, butternut, potimaron, courge, herbes, persil, coriandre, ciboulette, pomme, banane, fraise, framboise, cassis, poire, kiwi, rhubarbe, kaki, litchi, mangue"
     },
     {
@@ -67,8 +55,6 @@ const Liste = [
         altText: "produits laitiers",
         paragraph: "Yaourts et crèmes périmées, croutes de fromage",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: ""
     },
     {
@@ -77,8 +63,6 @@ const Liste = [
         altText: "coquilles d'oeuf",
         paragraph: "<b>Ecrasées</b> (se décomposent plus facilement) ou <b>empilées</b> (servent de refuge aux insectes bons pour le compost)",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: ""
     },
     {
@@ -87,8 +71,6 @@ const Liste = [
         altText: "graines",
         paragraph: "Tous les noyaux et graines sont compostables. Certaines graines résistent cependant au processus comme les graines de tomates ou de courges, et pousseront donc dans le bac",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: ""
     },
     {
@@ -97,8 +79,6 @@ const Liste = [
         altText: "dessin de poisson",
         paragraph: "En <b>petits morceaux</b>, ainsi que les os et les arrêtes",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: ""
     },
     {
@@ -107,8 +87,6 @@ const Liste = [
         altText: "pain",
         paragraph: "<b>Apport occasionnel, rare et en très petits morceaux</b>: le pain en décomposition tue les bonnes bactéries du compost !",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: "quignon de pain, miettes, pain dur, pain rassis"
     },
     {
@@ -117,8 +95,6 @@ const Liste = [
         altText: "marc de café",
         paragraph: "En quantité raisonnable il joue le rôle d'activateur et constitue un bon apport en minéraux",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: ""
     },
     {
@@ -127,8 +103,6 @@ const Liste = [
         altText: "dessin carton d'emballage",
         paragraph: "Penser à <b>découper avant de jeter</b>: boites d'oeufs, carton marron, sac kraft, rouleaux de PQ",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: "rouleau de sopalin"
     },
     {
@@ -137,8 +111,6 @@ const Liste = [
         altText: "dessins d'agrumes",
         paragraph: "On pense souvent que les agrumes (orange, pamplemousse, citron, clémentine) ne sont pas compostables. Pourtant les agrumes se décomposent très bien, pas d'inquiétude !",
         compostable: true,
-        indication: "Je peux composter",
-        imgIndication: "./photos/coche.png",
         nonAffiche: "pomelo"
     }
 ]
@@ -160,9 +132,9 @@ function Content(itemSearch)
         const titreCompare = item.titre.toLocaleLowerCase();
         const parCompare = item.paragraph.toLocaleLowerCase();
         const cacheCompare = item.nonAffiche.toLocaleLowerCase();
-        if (itemSearch !== "" 
-            && titreCompare.includes(itemSearch.toLocaleLowerCase()) 
-            || parCompare.includes(itemSearch.toLocaleLowerCase()) 
+        if (itemSearch !== ""
+            && titreCompare.includes(itemSearch.toLocaleLowerCase())
+            || parCompare.includes(itemSearch.toLocaleLowerCase())
             || cacheCompare.includes(itemSearch.toLocaleLowerCase()))
         {
             let content = document.getElementById("search-result");
@@ -195,15 +167,13 @@ function Content(itemSearch)
             content.appendChild(indication);
 
             let msgIndic = document.createElement("p");
-            msgIndic.innerHTML = item.indication;
+            msgIndic.innerHTML = `Je ${item.compostable?"peux":"ne dois pas"} composter`;
             indication.appendChild(msgIndic);
 
             let imgIndic = document.createElement("img");
-            imgIndic.src = item.imgIndication;
+            imgIndic.src = `./photos/${item.compostable?"coche":"croix"}.png`;
             indication.appendChild(imgIndic);
-
         }
-
     }
 }
 
