@@ -115,30 +115,25 @@ const Liste = [
     }
 ]
 
-const inputSearch = document.getElementById("search");
-const itemSearch = inputSearch.value;
-
-function Content(itemSearch)
+function Content()
 {
     let content = document.getElementById("search-result");
     content.innerHTML = "";
+    const inputSearch = document.getElementById("search");
+    const itemSearch = inputSearch.value.toLocaleLowerCase();
+    console.log(itemSearch);
 
     for (let i = 0; i < Liste.length; i++)
     {
         const item = Liste[i];
-        const inputSearch = document.getElementById("search");
-        const itemSearch = inputSearch.value;
-        console.log(itemSearch);
         const titreCompare = item.titre.toLocaleLowerCase();
         const parCompare = item.paragraph.toLocaleLowerCase();
         const cacheCompare = item.nonAffiche.toLocaleLowerCase();
         if (itemSearch !== ""
-            && titreCompare.includes(itemSearch.toLocaleLowerCase())
-            || parCompare.includes(itemSearch.toLocaleLowerCase())
-            || cacheCompare.includes(itemSearch.toLocaleLowerCase()))
+            && titreCompare.includes(itemSearch)
+            || parCompare.includes(itemSearch)
+            || cacheCompare.includes(itemSearch))
         {
-            let content = document.getElementById("search-result");
-
             let div = document.createElement("div");
             div.classList.add("item");
             content.appendChild(div);
@@ -177,8 +172,6 @@ function Content(itemSearch)
     }
 }
 
-
-
 // 		} else {
 //             let content = document.getElementById("filterResultContainer");
 
@@ -198,7 +191,6 @@ function Content(itemSearch)
 
 const bouton = document.getElementById("button-search");
 bouton.addEventListener('click', Content);
-
 
 //Affichage navigateur version mobile
 
