@@ -849,6 +849,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: baseline;
   width: 90%;
+  padding-bottom: 20px;
 }
 @media screen and (max-width: 600px) {
   .contain-footer {
