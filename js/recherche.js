@@ -45,10 +45,10 @@ const Liste = [
         "image": "./photos/compost-sapin.png",
         "altText": "photo sapin",
         "titre": "Les résineux",
-        "paragraph": "Les plantes de la famille des résineux (sapin) contiennent des inhibiteurs de croissance",
-        "compostable": false,
-        "indication": "Je ne dois pas composter",
-        "imgIndication": "./photos/croix.png",
+        "paragraph": "Les plantes de la famille des résineux (sapin) sont compostables, en broyat et en petite quantité à mélanger au brun",
+        "compostable": true,
+        "indication": "Je peux composter",
+        "imgIndication": "./photos/coche.png",
         "nonAffiche": ""
     },
     {
