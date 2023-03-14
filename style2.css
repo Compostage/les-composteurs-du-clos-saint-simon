@@ -573,7 +573,6 @@ nav a:hover {
     cursor: pointer;
     z-index: 10000000000;
   }
-
   #display {
     display: flex;
     flex-direction: column;
@@ -581,17 +580,14 @@ nav a:hover {
     width: 300px;
     border-radius: 20px;
   }
-
   .nav ul {
     margin: 0;
   }
-
   .nav ul li {
     text-align: start;
     width: 300px;
     background-color: rgba(0, 128, 0, 0.041);
   }
-
   .nav {
     display: none;
     width: 300px;
@@ -601,34 +597,28 @@ nav a:hover {
     left: 30px;
     border-radius: 30px;
   }
-
   .nav a {
     padding: 10px;
     width: 92%;
   }
-
   .sous {
     display: block;
     position: relative;
     box-shadow: unset;
     padding: 0;
   }
-
   .sous a {
     padding: 5px;
     padding-left: 15px;
     font-size: 15.5px;
   }
-
   .element1 {
     padding-top: 10px;
   }
-
   .border-top {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-
   .border-bottom {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -661,11 +651,9 @@ nav a:hover {
     left: 20px;
     width: 200px;
   }
-
   .nav ul li {
     width: 200px;
   }
-
   #display {
     width: 200px;
   }
@@ -710,7 +698,6 @@ nav a:hover {
   .sousQuizz, .sousInfos {
     display: none;
   }
-
   .sous a {
     font-weight: bold;
   }
@@ -768,14 +755,14 @@ nav a:hover {
 }
 
 #footer {
-  padding: 10px;
   display: flex;
+  width: 100%;
   justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
   border-top: 3px black solid;
   font-family: "Aleo", serif;
-  background-color: seagreen;
+  background-color: #18A98D;
 }
 @media screen and (max-width: 620px) {
   #footer {
@@ -790,7 +777,7 @@ nav a:hover {
 
 .footer-paragraph {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -800,23 +787,36 @@ nav a:hover {
   color: white;
 }
 
-.footer-paragraph > a {
+.footer-contact-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
+  width: auto;
   text-decoration: underline;
-  color: black;
+  color: #0B6463;
   scale: 0.9;
   transition-duration: 200ms;
-  color: white;
 }
-@media screen and (max-width: 800px) {
-  .footer-paragraph > a {
-    padding: 7px;
+@media screen and (max-width: 1000px) {
+  .footer-contact-link {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-contact-link {
+    flex-direction: row;
   }
 }
 
-.footer-paragraph > a:hover {
+.footer-contact-link:hover {
   font-weight: 600;
   scale: 1;
+}
+
+.footer-contact-link > p {
+  margin: 5px;
+  font-size: 12px;
 }
 
 .footer-div {
@@ -824,12 +824,61 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 30%;
+}
+@media screen and (max-width: 1000px) {
+  .footer-div {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-div {
+    margin-bottom: 10px;
+  }
 }
 
 .footer-div-titre > h4 {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   color: white;
+}
+
+.contain-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+}
+@media screen and (max-width: 600px) {
+  .contain-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.img-logo-humus {
+  width: 120px;
+  border-radius: 20px;
+}
+
+.footer-contact, .footer-part, .footer-about {
+  color: white;
+  text-align: center;
+}
+
+.footer-about, .footer-about-link {
+  text-align: center;
+}
+
+.footer-about-link {
+  color: #0B6463;
+  margin: 3px;
+  font-size: 12px;
+}
+
+.footer-about-link:hover {
+  text-decoration: underline;
 }
 
 .img {
@@ -861,8 +910,21 @@ nav a:hover {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  background-color: white;
   border-radius: 30px;
+}
+@media screen and (max-width: 800px) {
+  .logo-fb, .logo-mail {
+    width: 25px;
+    height: 25px;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo-fb, .logo-mail {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
 }
 
 .mail, .fb {
@@ -915,7 +977,6 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
   }
-
   .titre-header {
     text-align: center;
   }
