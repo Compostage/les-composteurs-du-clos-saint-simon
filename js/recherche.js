@@ -146,23 +146,25 @@ const Liste = [
 const inputSearch = document.getElementById("search");
 const itemSearch = inputSearch.value;
 
-function Content(itemSearch) {
+function Content(itemSearch)
+{
     let content = document.getElementById("search-result");
     content.innerHTML = "";
 
-    for (let i=0; i < Liste.length; i++) {
-        
+    for (let i = 0; i < Liste.length; i++)
+    {
         const item = Liste[i];
         const inputSearch = document.getElementById("search");
         const itemSearch = inputSearch.value;
-
         console.log(itemSearch);
-
         const titreCompare = item.titre.toLocaleLowerCase();
         const parCompare = item.paragraph.toLocaleLowerCase();
         const cacheCompare = item.nonAffiche.toLocaleLowerCase();
-
-        if (itemSearch !== "" && titreCompare.includes(itemSearch.toLocaleLowerCase()) || parCompare.includes(itemSearch.toLocaleLowerCase()) || cacheCompare.includes(itemSearch.toLocaleLowerCase())) {
+        if (itemSearch !== "" 
+            && titreCompare.includes(itemSearch.toLocaleLowerCase()) 
+            || parCompare.includes(itemSearch.toLocaleLowerCase()) 
+            || cacheCompare.includes(itemSearch.toLocaleLowerCase()))
+        {
             let content = document.getElementById("search-result");
 
             let div = document.createElement("div");
@@ -200,7 +202,7 @@ function Content(itemSearch) {
             imgIndic.src = item.imgIndication;
             indication.appendChild(imgIndic);
 
-        } 
+        }
 
     }
 }
@@ -209,7 +211,7 @@ function Content(itemSearch) {
 
 // 		} else {
 //             let content = document.getElementById("filterResultContainer");
-            
+
 //             let erreur = document.createElement("p");
 //             erreur.classList.add("msg-error");
 //             erreur.innerHTML = "Nous n'avons malheureusement pas trouvé ce que vous recherchez...";
@@ -234,15 +236,18 @@ let button = document.getElementById('bouton');
 let affiche = document.getElementById('display');
 let nav = document.getElementById('menu');
 
-button.addEventListener("click", () => {
-    if(getComputedStyle(nav).display != "block"){      
-      nav.style.display = "block";
-    } else {
-      nav.style.display = "none";
+button.addEventListener("click", () =>
+{
+    if (getComputedStyle(nav).display != "block")
+    {
+        nav.style.display = "block";
+    } else
+    {
+        nav.style.display = "none";
     }
-  })
+})
 
-  let quizz = document.querySelector('.derouleQuizz');
+let quizz = document.querySelector('.derouleQuizz');
 let info = document.querySelector('.derouleInfos');
 
 let sousQuizz = document.querySelector('.sousQuizz');
@@ -252,22 +257,28 @@ let flecheQuizz = document.querySelector('.flecheQuizz');
 let flecheInfos = document.querySelector('.flecheInfos');
 
 
-quizz.addEventListener("click", () => {
-  if(getComputedStyle(sousQuizz).display != "block") {
-    sousQuizz.style.display = "block";
-    flecheQuizz.style.rotate = "90deg";
-  } else {
-    sousQuizz.style.display = "none";
-    flecheQuizz.style.rotate = "0deg";
-  }
+quizz.addEventListener("click", () =>
+{
+    if (getComputedStyle(sousQuizz).display != "block")
+    {
+        sousQuizz.style.display = "block";
+        flecheQuizz.style.rotate = "90deg";
+    } else
+    {
+        sousQuizz.style.display = "none";
+        flecheQuizz.style.rotate = "0deg";
+    }
 })
 
-info.addEventListener("click", () => {
-  if(getComputedStyle(sousInfos).display != "block") {
-    sousInfos.style.display = "block";
-    flecheInfos.style.rotate = "90deg";
-  } else {
-    sousInfos.style.display = "none";
-    flecheInfos.style.rotate = "0deg";
-  }
+info.addEventListener("click", () =>
+{
+    if (getComputedStyle(sousInfos).display != "block")
+    {
+        sousInfos.style.display = "block";
+        flecheInfos.style.rotate = "90deg";
+    } else
+    {
+        sousInfos.style.display = "none";
+        flecheInfos.style.rotate = "0deg";
+    }
 })
