@@ -1096,8 +1096,6 @@ nav a:hover {
 
 .num {
   border-radius: 100%;
-  background-color: seagreen;
-  color: white;
   width: 60px;
   height: 60px;
   text-align: center;
@@ -1112,7 +1110,7 @@ nav a:hover {
 
 .des {
   width: 60%;
-  background-color: seagreen;
+  background-color: #4C8D8C;
   border-radius: 30px;
   margin-left: 20px;
   padding: 10px;
@@ -1146,7 +1144,7 @@ nav a:hover {
 }
 
 .divTest > p {
-  color: darkolivegreen;
+  color: #0B6463;
   font-weight: bold;
   text-align: center;
   font-size: 18px;
@@ -1161,8 +1159,8 @@ nav a:hover {
 
 .btnTest {
   border-radius: 30px;
-  background-color: darkolivegreen;
-  border: darkolivegreen;
+  background-color: #0B6463;
+  border: #0B6463;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -1180,8 +1178,8 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  justify-content: right;
+  width: 97%;
   margin-bottom: 30px;
   margin-top: 30px;
 }
@@ -1192,6 +1190,7 @@ nav a:hover {
   text-decoration: underline;
   font-weight: bold;
   width: auto;
+  color: #0B6463;
 }
 
 .doigtquizz {
@@ -1253,10 +1252,7 @@ nav a:hover {
   flex-direction: column;
   width: 22%;
   align-items: center;
-  justify-content: center;
-  padding: 12px;
-  border-radius: 45px;
-  border: black solid 1px;
+  justify-content: flex-start;
   margin: 7px;
   height: 350px;
 }
@@ -1268,17 +1264,11 @@ nav a:hover {
 }
 @media screen and (max-width: 800px) {
   .text-welcome {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 604px) {
-  .text-welcome {
-    width: 70%;
-    height: auto;
+    width: 80%;
   }
 }
 .text-welcome-img {
-  width: 100px;
+  width: 70px;
   scale: 0.9;
 }
 .text-welcome-title {
@@ -1304,7 +1294,7 @@ nav a:hover {
 .text-welcome-list-item {
   font-size: 19px;
   padding: 10px;
-  border: green 1px solid;
+  border: #0B6463 1px solid;
   border-radius: 20px;
   margin: 10px;
   text-align: center;
@@ -1424,7 +1414,7 @@ nav a:hover {
 }
 
 .utilisation {
-  width: 80%;
+  width: 93%;
 }
 
 .betes {
@@ -1438,7 +1428,7 @@ nav a:hover {
 
 .titre2 {
   text-align: center;
-  color: green;
+  color: #0B6463;
   font-size: 30px;
 }
 @media screen and (max-width: 890px) {
@@ -1746,6 +1736,7 @@ nav a:hover {
 .num > p {
   margin-top: -1px;
   padding-top: 10px;
+  color: #4C8D8C;
 }
 
 .photo {
@@ -1846,10 +1837,6 @@ nav a:hover {
   }
 }
 
-.photo-utilisation-seule {
-  width: 40%;
-  height: 300px;
-}
 @media screen and (max-width: 990px) {
   .photo-utilisation-seule {
     width: 30%;
@@ -1923,14 +1910,42 @@ nav a:hover {
 }
 
 .utilisation-cat {
-  border: solid 1px green;
+  border: solid 2px #0B6463;
   border-radius: 30px;
   padding: 10px;
   margin-top: 30px;
 }
 
 .utilisation-cat-p {
-  text-align: center;
+  text-align: left;
+}
+
+.utilisation-description {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 800px) {
+  .utilisation-description {
+    flex-direction: column;
+  }
+}
+
+.img-utilisation {
+  width: 150px;
+  height: 150px;
+}
+
+.div-img-utilisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.div-utilisation-description {
+  width: 100%;
 }
 
 #content-search {
@@ -1955,7 +1970,7 @@ nav a:hover {
   border-bottom-left-radius: 30px;
   border-right: none;
   padding: 7px;
-  color: green;
+  color: #0B6463;
   font-weight: 600;
   cursor: auto;
 }
@@ -2025,7 +2040,17 @@ nav a:hover {
   border: antiquewhite solid 3px;
   border-radius: 120px;
   padding: 20px;
-  width: auto;
+  width: 40%;
+}
+@media screen and (max-width: 800px) {
+  .item {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item {
+    width: 80%;
+  }
 }
 
 .itemContent {
@@ -2133,7 +2158,7 @@ nav a:hover {
 h3 {
   font-size: 16px;
   text-decoration: underline;
-  color: green;
+  color: #0B6463;
   text-align: center;
 }
 
@@ -2236,7 +2261,7 @@ h2 {
   align-items: center;
   width: 100%;
   margin-bottom: 30px;
-  border: green solid 2px;
+  border: #0B6463 solid 2px;
   border-radius: 30px;
 }
 @media screen and (max-width: 800px) {
@@ -2286,7 +2311,7 @@ h2 {
   color: black;
 }
 .actus-div-content-contact > a:hover {
-  color: green;
+  color: #0B6463;
 }
 
 .bonneRep1, .bonneRep2, .bonneRep3, .bonneRep4, .bonneRep5, .bonneRep6, .bonneRep7, .bonneRep8, .bonneRep9, .bonneRep10 {
@@ -2309,12 +2334,12 @@ h2 {
   margin: 16px;
   width: 90px;
   border-radius: 30px;
-  background-color: green;
+  background-color: #0B6463;
   color: white;
   font-weight: bold;
   font-size: 17px;
   padding: 5px;
-  border: green;
+  border: #0B6463;
   cursor: pointer;
 }
 
