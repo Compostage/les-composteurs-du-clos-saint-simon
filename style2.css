@@ -2306,6 +2306,9 @@ h2 {
     text-align: center;
   }
 }
+.actus-div-content-date {
+  font-style: italic;
+}
 .actus-div-content-contact > a {
   text-decoration: underline;
   color: black;
