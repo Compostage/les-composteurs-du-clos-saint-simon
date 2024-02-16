@@ -25,8 +25,13 @@
   <body>
     <header class="header">
       <div class="div-header-border" id="headerBorder">
-        <img src="./photos/logo-site.png" class="logo-header" alt="dessin représentant deux personnes à côté d'un bac à compost entourés de plantes" />
-        <h1 class="titre-header">Les composteurs du Clos Saint-Simon</h1>
+        <!-- <img src="./photos/logo-site.png" class="logo-header" alt="dessin représentant deux personnes à côté d'un bac à compost entourés de plantes" /> -->
+        <div class="banniere-content">
+          <img src="./photos/banniere6.jpg" class="banniere" alt="épluchures sur planche à découper, bac à compost">
+        </div>
+        <div class="titre-header-content">
+          <h1 class="titre-header">Les composteurs du Clos Saint-Simon</h1>
+        </div>
       </div>
 
       <div id="bouton" class="apparition1">
@@ -35,34 +40,34 @@
       <nav id="menu" class="nav affichage">
         <ul id="display">
           <li class="ongletMenu border-top">
-            <a href="./index.html" class="lienMenu">Accueil</a>
+            <a href="./index.html" class="lienMenu"><i class="fa-solid fas fa-home"></i></a>
           </li>
-          <li class="nav__déroulant ongletMenu derouleInfos"><a href="#" class="contain-fleche">Comment composter<img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheInfos"/></a>
+          <li class="nav__déroulant ongletMenu derouleInfos"><a href="#" class="contain-fleche">Tout savoir sur le compostage<i id="iconeFlecheMenu1" class="fa-solid fas fa-chevron-up"></i>
+            <!-- <img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheInfos"/> -->
+          </a>
             <ul class="sous sousInfos" id="sous">
               <li class="affichage-mobile-padding"><a href="ok.html">Ce que je peux composter</a></li>
               <li class="affichage-mobile-padding"><a href="non.html">Ce que je ne peux pas composter</a></li>
               <li class="affichage-mobile-padding"><a href="gestes.html">Les bons gestes à adopter</a></li>
+              <li class="affichage-mobile-padding"><a href="./betes.html">Les bébêtes du compost</a></li>
+              <li class="affichage-mobile-padding"><a href="./utilisation.html">Utiliser le compost</a></li>
             </ul>
           </li>
-          <li class="ongletMenu">
-            <a href="./betes.html" class="lienMenu">Les bébêtes du compost</a>
-          </li>
-          <li class="ongletMenu">
-            <a href="./utilisation.html" class="lienMenu">Utiliser le compost</a>
-          </li>
-          <li class="ongletMenu">
-            <a href="./recherche.html" class="lienMenu">Recherche</a>
-          </li>
-          <li class="ongletMenu">
-            <a href="./actu.html" class="lienMenu">Actualités</a>
-          </li>
-          <li class="nav__déroulant ongletMenu derouleQuizz"><a href="#" class="contain-fleche">Quizz<img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheQuizz"/></a>
+          <li class="nav__déroulant ongletMenu derouleQuizz"><a href="#" class="contain-fleche">Quizz <i id="iconeFlecheMenu" class="fa-solid fas fa-chevron-up"></i>
+            <!-- <img src="./photos/fleche-anim.png" class="fleche-menu-anim flecheQuizz"/> -->
+          </a>
             <ul class="sous sousQuizz" id="sous">
               <li class="affichage-mobile-padding"><a href="quizz.html">Comment et quoi composter</a></li>
               <li class="affichage-mobile-padding"><a href="quizzcompost.html">Reconnaitre et utiliser le compost mûr</a></li>
               <li class="affichage-mobile-padding"><a href="quizzbetes.html">Les petites bêtes du compost</a></li>
               <li class="affichage-mobile-padding"><a href="quelcomposteur.html">Quel composteur es-tu ?</a></li>
             </ul>
+          </li>
+          <li class="ongletMenu">
+            <a href="./recherche.html" class="lienMenu">Recherche</a>
+          </li>
+          <li class="ongletMenu">
+            <a href="./actu.html" class="lienMenu">Actus</a>
           </li>
           <li class="ongletMenu border-bottom">
             <a href="./contact.html" class="lienMenu">Contact</a>
@@ -71,7 +76,7 @@
       </nav>
     </header>
 
-    <!-- <section id="content3">
+    <section id="content3">
       <h2 class="text-welcome-title">Bienvenue !</h2>
       <div class="text-welcome welcome2">
         <img src="./photos/compost-welcome.png" alt="Welcome we are open" class="text-welcome-img img-welcome"/>
@@ -84,12 +89,139 @@
           <a href="./utilisation.html" class="text-welcome-list-item">Les différentes façons d'utiliser son compost mûr, en pot ou au jardin</a>
         </div>
       </div>
-    </section> -->
-    <section id="text-index">
-      <h2>Bienvenue chers composteurs !</h2>
-      <p>Sur ce site vous trouverez plusieurs conseils pour apprendre à composter de manière optimale : <strong>ce qu'il faut ou ne faut pas composter</strong>, <strong>les bons gestes à adopter</strong>, <strong>comment utiliser le compost mûr</strong>... Vous trouverez également un <strong>onglet recherche</strong>, une page contact avec plusieurs <strong>liens intéressants pour aller plus loin</strong>, ainsi que des <strong>quizz</strong> pour apprendre et tester vos connaissances tout en vous amusant !</p>
-      <p>Pour toute question sans réponse, inscription à la liste des utilisateurs ou une simple envie de discuter, <a href="mailto:compostage.clos.saint.simon@gmail.com">n'hésitez pas à nous contacter</a> !</p>
     </section>
+
+
+    <!-- <section id="text-index">
+      <div class="container-state-home"> -->
+        <!-- <h2>Bienvenue chers composteurs !</h2> -->
+      <!-- <h2>Vous voulez savoir comment fonctionne le compostage ? <br/>Vous êtes au bon endroit !</h2> -->
+      <!-- <p>On vous explique tout étape par étape : le compostage n'aura plus de secret pour vous !</p> -->
+      <!-- <p>Sur ce site vous trouverez plusieurs conseils pour apprendre à composter de manière optimale : <strong>ce qu'il faut ou ne faut pas composter</strong>, <strong>les bons gestes à adopter</strong>, <strong>comment utiliser le compost mûr</strong>... Vous trouverez également un <strong>onglet recherche</strong>, une page contact avec plusieurs <strong>liens intéressants pour aller plus loin</strong>, ainsi que des <strong>quizz</strong> pour apprendre et tester vos connaissances tout en vous amusant !</p>
+      <p>Pour toute question sans réponse, inscription à la liste des utilisateurs ou une simple envie de discuter, <a href="mailto:compostage.clos.saint.simon@gmail.com">n'hésitez pas à nous contacter</a> !</p> -->
+      <!-- <div class="etape-accueil">
+        <div class="container-circle"><div class="demi-cercle1"></div></div>
+        <div class="texte-demi-cercle">
+          <h3 class="title-circle">Tout savoir sur <strong>les différents types de bacs à compost</strong></h3>
+          <p class="P-circle">Avant de commencer à composter, il est nécessaire de trouver le bac à compost qui vous convient le mieux. Il existe en effet plusieurs manières de composter, à vous de choisir laquelle est la plus adaptée à votre mode de vie, votre consommation et vos besoins.</p>
+          <div class="container-plus-circle"><div class='plus-circle'><a class="P-circle-plus">En savoir plus</a></div></div>
+        </div>
+      </div>
+      <div class="etape-accueil">
+        <div class="texte-demi-cercle">
+          <h3 class="title-circle">Tout savoir sur le compost et son équilibre : <strong>les bonnes pratiques</strong></h3>
+          <p class="P-circle">Un bon compost est un compost équilibré et oxygéné, afin de fournir un environnement propice aux bactéries et insectes responsables de la décomposition de vos déchets.</p>
+          <div class="container-plus-circle"><div class='plus-circle'><a class="P-circle-plus">En savoir plus</a></div></div>
+        </div>
+        <div class="container-circle"><div class="demi-cercle2"></div><div class="demi-cercle2 demi-cercle2-2"></div></div>
+      </div>
+      <div class="etape-accueil">
+        <div class="container-circle"><div class="demi-cercle3 demi-cercle3-1"></div><div class="demi-cercle3"></div><div class="demi-cercle3 demi-cercle3-3"></div></div>
+        <div class="texte-demi-cercle">
+          <h3 class="title-circle">Tout savoir sur <strong>le compost mûr</strong> : le reconnaitre et l'utiliser</h3>
+          <p class="P-circle">Il est important de savoir reconnaitre le compost mûr, autrement dit le compost prêt à l'emploi et les bonnes méthodes pour l'utiliser.</p>
+          <div class="container-plus-circle"><div class='plus-circle'><a class="P-circle-plus">En savoir plus</a></div></div>
+        </div>
+      </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="section-text-img-home">
+      <div class="div-container-text-home">
+        <h2>Qui sommes-nous ?</h2>
+      <div class="sup-img-home">
+        <div class="container-img-home">
+          <img class="img-home-who" src="./photos/accueil/accueil-equipe-ref.png" alt="Une équipe de référents composteurs">
+        </div>
+        <div class="container-img-home">
+          <img class="img-home-who" src="./photos/accueil/accueil-citoyens.png" alt="Des citoyens engagés">
+        </div>
+        <div class="container-img-home">
+          <img class="img-home-who" src="./photos/accueil/accueil-passion.png" alt="Des passionnés soucieux de transmettre leur savoir">
+        </div>
+      </div>
+      <div class="sup-text-home">
+        <div class="container-text-home text-home1">
+          <div class="alinea-text"></div>
+          <div class="text-home">
+            <p class="text-home-P">Nous sommes une équipe de référents d'un emplacement de compostage collectif à Toulouse. A l'origine, ce site web a été créé à destination des utilisateurs de notre emplacement de compostage. L'idée était de leur offrir un support simple et accessible où ils pourraient trouver toutes les réponses à leurs questions concernant le fonctionnement du compostage : ce que l'on peut composter ou pas, les gestes techniques et les bonnes pratiques à adopter dans le cadre du compostage collectif, les différentes manières d'utiliser le compost mûr, etc.</p>
+          </div>
+        </div>
+        <div class="container-text-home text-home2">
+          <div class="alinea-text"></div>
+          <div class="text-home">
+            <p class="text-home-P">Toutes les informations sur le compostage regroupées ici ont été validées par l'association Humus et Associés, qui gère, en étroite collaboration avec la mairie de Toulouse, tout ce qui concerne le compostage dans la métropole toulousaine et sa périphérie. Les membres de l'association ont par la suite jugé que notre site web pourrait être utile à d'autres équipes référentes d'emplacements de compostage collectif et l'ont donc proposé en tant que support de formation aux usagers.</p>
+          </div>
+        </div>
+        <div class="container-text-home text-home3">
+          <div class="alinea-text"></div>
+          <div class="text-home">
+            <p class="text-home-P">Plus récemment, depuis le début de l'année 2024, les demandes d'informations relatives au compostage, qu'il soit collectif ou individuel, ont explosé, notamment du fait de la loi AGEC (Anti-Gaspillage pour une Economie Circulaire) qui prévoit la mise à disposition des particuliers de solutions de gestion des biodéchets. Dans certaines communes, une tarififcation incitative des déchets a été mise en place pour inciter les personnes à réduire le volume de leurs déchets sous peine de payer une taxe supplémentaire, obligeant ainsi à trouver des solutions de tri, telles que le compostage. Seulement voilà, les emplacements de compostage collectif dans l'espace public, encore à l'état expérimental, demeurent trop peu nombreux et soumis à un numerus closus (il faut impérativement s'inscrire et un nombre limité de personnes peuvent les utiliser). Reste la possibilité du compostage collectif en pied d'immeuble également financé par les mairies, mais encore faut-il un espace extérieur conséquent, ce qui n'est pas toujours le cas. Il est donc aujourd'hui nécessaire de se tourner vers des solutions de compostage individuel.</p>
+          </div>
+        </div>
+        <div class="container-text-home text-home4">
+          <div class="alinea-text"></div>
+          <div class="text-home">
+            <p class="text-home-P">C'est donc face à ces problématiques que nous avons décidé d'étendre le contenu de notre site web, initialement dédié au compostage collectif, afin de vous informer sur le compostage et vous aider à trouver LA solution de compostage qui vous correspond.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section> -->
+
+    <!-- <section>
+      <div>
+        <h2>Testez vos connaissances avec nos Quizz Compost !</h2>
+        <div>
+          <div class="etape-accueil"> -->
+            <!-- <div class="container-circle"><div class="demi-cercle4"></div></div> -->
+            <!-- <div class="texte-demi-cercle">
+              <h3 class="title-circle">Êtes-vous un expert en compostage ?</h3>
+              <p class="P-circle">Vous pouvez tester vos connaissances en vous amusant avec nos quizz thématiques : le compostage collectif, le lombricompost, les bonnes pratiques, quel composteur êtes-vous, ...</p>
+              <div class="container-plus-circle"><div class='plus-circle'><a class="P-circle-plus">Tous nos quizz</a></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="section-scroll">
+      <div class="scroll-and-title">
+        <h2>D'autres sujets qui pourraient vous intéresser</h2>
+        <div class="scroll-arrow">
+          <div class="left-scroll"><a href="#scroll1"><i class="fa-solid fas fa-chevron-up img-left-scroll" id="img-left-scroll"></i></a></div>
+          <div class="scroll-bar">
+            <div class="all-subjects">
+              <div id="scroll1">
+                <div class="scroll-subject">
+                  <h3 class="scroll-subject-title">Le compostage obligatoire en 2024</h3>
+                  <p>Article de blog</p>
+                  <div class="content-link"><a class="scroll-subject-link">Voir</a></div>
+                </div>
+                <div class="scroll-subject">
+                  <h3 class="scroll-subject-title">Quel composteur es-tu ?</h3>
+                  <p>Quizz</p>
+                  <div class="content-link"><a class="scroll-subject-link">Voir</a></div>
+                </div>
+              </div>
+              <div id="scroll2">
+                <div class="scroll-subject">
+                  <h3 class="scroll-subject-title">Les différents types de composteurs</h3>
+                  <p>Page</p>
+                  <div class="content-link"><a class="scroll-subject-link">Voir</a></div>
+                </div>
+                <div class="scroll-subject">
+                  <h3 class="scroll-subject-title">Carton: tri sélectif ou compost ?</h3>
+                  <p>Article de blog</p>
+                  <div class="content-link"><a class="scroll-subject-link">Voir</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-scroll"><a href="#scroll2"><i class="fa-solid fas fa-chevron-up img-right-scroll" id="img-right-scroll"></i></a></div>
+        </div>
+      </div>
+    </section> -->
 
     <!-- <section id="index-img">
       <img class="index-img" src="./photos/composteur.png" alt="Dessin d'un composteur" />
@@ -140,7 +272,7 @@
         <div class="footer-div">
           <p class="footer-part">Partenaire</p>
           <div class="logo-humus">
-            <img class="img-logo-humus" src="./photos/logo_humus_bleu.png"/>
+            <img class="img-logo-humus" src="./photos/logo_humus_blanc.png"/>
           </div>
         </div>
         <div class="footer-div">
@@ -152,7 +284,7 @@
         <div class="footer-div">
           <p class="footer-contact">Nous contacter</p>
           <div class="footer-paragraph">
-            <a class="footer-contact-link" href="mailto:compostage.clos.saint.simon@gmail.com"><img src="./photos/mail.png" class="logo-fb" alt="enveloppe, logo email"/><p>compostage.clos.saint.simon@gmail.com</p></a>
+            <a class="footer-contact-link" href="mailto:compostage.clos.saint.simon@gmail.com"><img src="./photos/enveloppe.png" class="logo-fb" alt="enveloppe, logo email"/><p>compostage.clos.saint.simon@gmail.com</p></a>
           </div>
         </div>
       </div>
